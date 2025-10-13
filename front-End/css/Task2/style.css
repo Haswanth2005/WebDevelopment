@@ -1,0 +1,51 @@
+@font-face {
+  font-family: kunfu;
+  src: url(../../../media/font/FunnelSans-VariableFont_wght.ttf);
+}
+
+*{
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+
+html,body{
+  height: 100%;
+  width: 100%;
+}
+
+.image{
+  height: 94%;
+  width: 100%;
+  background-image: url(../../../media/photos/KUNG\ FU\ PANDA\ POSTER.jpeg);
+  background-size: cover;
+
+}
+.nav{
+  background-color: black;
+}
+.nav p{
+  height: 60px;
+  color: antiquewhite;
+  text-align: center;
+  font-size: 30px;
+  padding: 10px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  /* font-family: kunfu; */
+}
+
+.image button{
+  margin: 36% 46%;
+  padding: 5px;
+  padding-left: 20px;
+  padding-right: 20px;
+  background-color: beige;
+  color: black;
+  font-family: kunfu;
+  font-size: 20px;
+  font-weight: 900;
+  border-width: 5px;
+  border-style: solid;
+  border-color: darkseagreen;
+  border-radius: 15px;
+}
