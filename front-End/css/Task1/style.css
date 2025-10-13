@@ -1,0 +1,27 @@
+*{
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+body,html{
+  height: 100%;
+  width: 100%;
+  background-color: #37353E;
+}
+
+.top{
+  color: antiquewhite;
+  text-align: center;
+  padding: 10px;
+}
+.box{
+  background-color: #44444E;
+  text-align: center;
+  width: 70%;
+  padding: 10px;
+  color: antiquewhite;
+  margin: auto;
+}
+.box h2{
+  padding: 10px;
+}
