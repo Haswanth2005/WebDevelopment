@@ -1,0 +1,83 @@
+@font-face {
+  font-family: apple;
+  src: url(../../../media/font/sf-pro-text_regular.woff2);
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,body{
+  height: 100%;
+  width: 100%;
+  background-color: black;
+}
+
+.main{
+  height: 100%;
+  width: 100%;
+  background-color: rgb(0, 0, 0);
+}
+.nav{
+  background-color: black;
+  height: 30px;
+  color: rgb(194, 191, 191);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+  font-family: apple;
+  font-size: 8px;
+}
+.nav>h4{
+  font-weight: 5;
+}
+.nav i{
+  font-size: 12px;
+}
+.startVideo{
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+.startVideo video{
+  width: 78%;
+  background-color: black;
+
+}
+.ess{
+ background-color: rgb(25, 25, 25);
+ color: white;
+ height: 40px;
+ font-family: apple;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+}
+.ess p{
+  font-size: 10px;
+}
+.btn{
+  position: absolute;
+  bottom: 50px;
+  display:  flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.btn button{
+  margin: 10px;
+  background-color: rgb(12, 113, 220);
+  color: white;
+  font-family: apple;
+  font-size: 13px;
+  font-weight: 200;
+  padding: 5px 10px;
+  border-radius: 20px;
+  border-style: none;
+}
+.btn p{
+  font-family: apple;
+  color: white;
+  font-size: 13px;
+}
