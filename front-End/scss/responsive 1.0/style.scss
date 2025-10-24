@@ -1,0 +1,51 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,body{
+  height: 100%;
+  width: 100%;
+}
+
+main{
+  width: 100%;
+  height: 100vh;
+  background-color: beige;
+  display: grid;
+  grid-template-columns: 1.5fr 1fr 1fr 1fr;
+  grid-template-rows: 1.5fr 1fr;
+  grid-template-areas: "left top top top"
+                       "left bottom1 bottom2 bottom3";
+  gap: 35px;
+  padding: 35px;
+
+  .left{
+    background-color: black;
+    grid-area: left;
+    border-radius: 50px;
+  }
+  .top{
+    background-color: black;
+    grid-area: top;
+    border-radius: 50px;
+    background-image: url(../../../media/photos/KUNG\ FU\ PANDA\ POSTER.jpeg);
+    background-size: cover;
+    background-position: center;
+  }
+  .bottom1{
+    background-color: black;
+    grid-area: bottom1;
+    border-radius: 50px;
+  }
+  .bottom2{
+    background-color: black;
+    grid-area: bottom2;
+    border-radius: 50px;
+  }
+  .bottom3{
+    background-color: black;
+    grid-area: bottom3;
+    border-radius: 50px;
+  }
+}

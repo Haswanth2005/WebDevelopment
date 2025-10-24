@@ -1,0 +1,37 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  height: 100%;
+  width: 100%;
+}
+
+main {
+  height: 100%;
+  width: 100%;
+  display: flex;
+}
+main .division {
+  flex: 1;
+  height: 100%;
+  border: 2px solid black;
+  transition: all 0.5s ease;
+}
+main .division:hover {
+  flex: 1.5;
+  background-color: lightblue;
+  cursor: pointer;
+}
+main .division:nth-child(1) {
+  background-image: url("https://images.pexels.com/photos/1054655/pexels-photo-1054655.jpeg?cs=srgb&dl=pexels-hsapir-1054655.jpg&fm=jpg");
+  background-size: cover;
+  background-position: center;
+}
+main .division:nth-child(2) {
+  background-image: url("../../../media/photos/KUNG FU PANDA POSTER.jpeg");
+  background-size: cover;
+  background-position: center;
+}/*# sourceMappingURL=style.css.map */

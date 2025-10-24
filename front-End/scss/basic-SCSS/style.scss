@@ -1,0 +1,38 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body,html{
+  height: 100%;
+  width: 100%;
+}
+//imports
+@import "background";
+
+
+main{
+  height: 100%;
+  width: 100%;
+  display: flex;
+
+  .division{
+    flex: 1;
+    height: 100%;
+    border: 2px solid black;
+    transition: all 0.5s ease;
+  }
+
+  .division:hover{
+    flex: 1.5;
+    background-color: lightblue;
+    cursor: pointer;
+  }
+
+  .division:nth-child(1){
+    @include bgi("https://images.pexels.com/photos/1054655/pexels-photo-1054655.jpeg?cs=srgb&dl=pexels-hsapir-1054655.jpg&fm=jpg");
+  }
+  .division:nth-child(2){
+    @include bgi("../../../media/photos/KUNG\ FU\ PANDA\ POSTER.jpeg")
+  }
+}

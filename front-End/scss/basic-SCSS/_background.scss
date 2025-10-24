@@ -1,0 +1,5 @@
+@mixin bgi($bgi-url){
+  background-image: url($bgi-url);
+  background-size: cover;
+  background-position: center;
+}
