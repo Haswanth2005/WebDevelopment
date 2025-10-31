@@ -1,0 +1,137 @@
+@font-face {
+  font-family: monster;
+  src: url(../../../media/font/Montserrat-VariableFont_wght.ttf);
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body , html{
+  height: 100%;
+  width: 100%;
+  background-color: #181A1B;
+}
+
+main{
+  font-family: monster;
+  nav{
+    display: flex;
+    justify-content: space-between;
+    background-color: #181A1B;
+    color: aliceblue;
+    padding: 1.5em;
+
+    .nav1{
+      display: flex;
+      gap: 3em;
+
+      a {
+          text-decoration: none;
+          color: aliceblue;
+          display: none;
+        }
+      @media (min-width : 950px){
+        a{
+          display: block;
+        }
+      }
+
+    }
+
+    .nav2{
+      display: flex;
+      gap: 3em;
+
+      a{
+        text-decoration: none;
+        color: aliceblue;
+      }
+    }
+  }
+
+  section{
+    padding: 0 min(2rem , 5%);
+    .content{
+      width: 100%;
+      height: clamp(16.8rem, 60vw, 90vh);
+      background: linear-gradient(to right, #3b3e40, #232426);
+      border-radius: 2rem;
+      padding: min(2rem, 5%);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 0.5rem;
+      line-height: 0.8;
+      color: rgb(251, 248, 242);
+
+      position: relative;
+      .image{
+        position: absolute;
+        object-fit: cover;
+        z-index: 1;
+
+        img{
+          width: 100%;
+        }
+      }
+
+      h1{
+        font-size:11vw;
+        font-weight: 900;
+      }
+      h2{
+        font-size: 5vw;
+        font-weight: 800;
+      }
+      h3{
+        font-size: 2vw;
+        font-weight: 600;
+      }
+
+      .desc {
+        display: none;
+      }
+      @media(min-width: 765px){
+        .desc{
+          display: inline-block;
+          width: 350px;
+          text-align: end;
+          line-height: 1.3;
+          position: absolute;
+          right: 40px;
+          bottom: 40px;
+        }
+      }
+      @media(min-width: 1024px) {
+        .desc {
+          right: 80px;
+          bottom: 100px;
+        }
+      }
+
+      button{
+        width: fit-content;
+        background-color: #B00911;
+        padding: min(1rem ,3%) 1.2rem;
+        font-family: monster;
+        color: rgb(251, 248, 242);
+        font-weight: 600;
+        font-size: 15px;
+        border-radius: 50px;
+        border: none;
+      }
+    }
+
+
+    @media(min-width: 765px){
+      .content{
+        padding: min(5rem, 6%);
+        gap: 1rem;
+      }
+    }
+
+  }
+}
