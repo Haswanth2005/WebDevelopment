@@ -1,0 +1,74 @@
+// Arithmetic Operators
+// Comparison Operators
+    Equal to (==) // ye use nahi karna chahiye
+    Not equal to (!=)
+    Strict equal to (===) // ye use karna chahiye
+    Strict not equal to (!==)
+    Greater than (>)
+    Greater than or equal to (>=)
+    Less than (<)
+    Less than or equal to (<=)
+// Logical Operators
+    Logical AND (&&)
+    Logical OR (||)
+    Logical NOT (!)
+
+//ternary Operator (condition ? expr1 : expr2)
+example:
+let age = 18;
+let canVote = (age >= 18) ? "Yes, can vote" : "No, cannot vote";
+
+// Type Operators
+    typeof variableName;  // returns the type of the variable
+    instanceof ObjectName; // checks if an object is an instance of a specific class
+    example:
+    class Car {
+      constructor(make) {
+        this.make = make;
+      }
+    }
+
+    let myCar = new Car("Toyota");
+    let myString = "hello";
+
+    console.log(myCar instanceof Car);    // Output: true (kyunki myCar, Car class se bana hai)
+    console.log(myString instanceof String); // Output: false (myString ek primitive string hai, object nahi)
+    console.log(myCar instanceof Object); // Output: true (sabhi objects ultimately Object class ke instance hote hain)
+
+//spread / rest operator (...) very important in modern JS
+  spread --> arrays
+    spread copy karne ke liye use hota hai
+    example:
+    let arr1 = [1, 2, 3];
+    let arr2 = [...arr1, 4, 5]; // arr2 = [1, 2, 3, 4, 5]
+  rest --> function parameters
+    //baad me jake spread and rest ke bare me detail me padhenge
+
+//nullish coalescing operator (??)
+  agar left operand null ya undefined hai to right operand return karta hai, otherwise left operand return karta hai
+  example:
+  12 > 10 ?? console.log("sorry"); // returns 12
+  null ?? console.log("sorry"); // returns "sorry"
+
+//optional chaining operator (?.)
+  agar koi property ya method exist nahi karti to error throw karne ki bajaye undefined return karta hai
+  example:
+  let user = {};
+  console.log(user?.address?.street); // returns undefined instead of throwing an error
+
+//variable hoisting in JS
+  hoisting ka matlab hai ki variable ko banane se phele bi use kar sakte hain
+  hoisting me aapka varible toot jaata hai do hisso me
+  1. Declaration: Declaration top of the file jata hai
+  2. Initialization: Initialization vahi rehta hai
+  ise ab variable error nahi deta hai
+  example:
+  console.log(x); // undefined
+  var x = 5;
+  var x; // declaration hoisted to the top
+  x = 5; // initialization stays in place
+  console.log(x); // 5
+    // Note: let and const ke sath hoisting nahi hoti hai, ye temporal dead zone me rehte hain jab tak unka initialization nahi hota
+
+// Assignment Operators
+// Bitwise Operators

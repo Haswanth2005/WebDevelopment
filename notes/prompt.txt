@@ -1,0 +1,1 @@
+"Convert the file content into a Markdown (.md) file. Preserve the original Hinglish essence and keep explanations short and simple, without adding any new concepts. Enhance readability and visual appeal by using clear headings, bullet points, code blocks for examples, and relevant emojis."
