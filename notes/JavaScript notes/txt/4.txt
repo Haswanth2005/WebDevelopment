@@ -1,0 +1,23 @@
+//loops and conditionals
+
+//conditionals
+    conditional operators in javascript [if, else if, else, switch case]
+    //truthy and falsy values
+      0, "", null, undefined, NaN, false, document.all -> falsy values
+      everything else is truthy value
+
+//loops -- most important concept in programming
+  loops ke use case me do prakar hai
+  1. straightforward loops --> na hi value badalthi na hi printing badaltha hai
+  2. dynamic loops --> value ya printing badaltha hai
+
+    for loop
+    while loop
+    do...while loop
+    forEach loop
+    for...in loop
+    for...of loop
+    Recursion (not a loop but used for iteration)
+    Loop control statements
+      break
+      continue
