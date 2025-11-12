@@ -1,0 +1,67 @@
+//functions in JavaScript
+
+functions --> aapka code jo thurant nahi chalega jab tak aap usse call na karein
+              aap uss code ko kitni bi bar chala sakthe ho
+
+understanding functions - [parameters , arguments , rest parameters , hoisting , variable hoisting , function hoisting]
+  //rest parameters
+    ...a will collect all the remaining arguments into an array
+    example:
+      function test(a, b,...c) { //rest parameters
+        console.log(a); //2
+        console.log(c); //[4, 5, 6]
+      }
+      console.log(test(2, 3, 4, 5, 6));
+
+  //parameters in JavaScript [required , default , destructured , rest]
+  //destructured parameters
+    example:
+      function test({a, b, c}) { //destructured parameters
+        console.log(a); //2
+        console.log(b); //3
+        console.log(c); //4
+      }
+      console.log(test({a: 2, b: 3, c: 4}));
+
+  //arguments in JavaScript [positional, default, spread]
+    //spread arguments
+      example:
+        function test(a, b, c) {
+          console.log(a); //2
+          console.log(b); //3
+          console.log(c); //4
+        }
+        let arr = [2, 3, 4];
+        console.log(test(...arr)); //spread operator
+
+  classic function , nested function (function within funcition) , scope chain in JavaScript
+  //scope chain -- jaha bhi variable difined hoga waha se wo accessible hoga
+                    agar variable function ke andar defined hai to wo function ke bahar accessible nahi hoga
+
+  //understanding Immediately Invoked Function Expression (IIFE)
+    example:
+      (function() {
+        console.log("IIFE executed");
+        var a = 10;
+      })();
+      //console.log(a); //Error: a is not defined //because a is not accessible outside the IIFE
+                        iske usecase ham baad mein samjhenge
+
+//arguments object
+  example:
+    function sum() {
+        console.log(arguments); //arguments object
+        console.log(arguments[0]); //first argument -> 2
+    }
+    console.log(sum(2, 3, 4, 5, 6));
+
+
+//more on functions in JavaScript
+  arrow function
+  fat arrow function
+  anonymous function
+  higher order function
+  callback function
+  first class function
+  pure function
+  impure function
