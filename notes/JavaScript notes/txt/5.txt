@@ -57,11 +57,64 @@ understanding functions - [parameters , arguments , rest parameters , hoisting ,
 
 
 //more on functions in JavaScript
-  arrow function
-  fat arrow function
-  anonymous function
-  higher order function
+  arrow function - fat arrow function -> both are same
+    ()=>{
+      console.log("arrow function");
+    }
+  anonymous function - function without a name
+    example:
+      let anonFunc = function() { //anonymous function
+        console.log("anonymous function");
+      }
+      anonFunc();
+
+  higher order function -> 1. ek function jo ki return karde dursre function ko
+                          2. ya fir ek function jo ki dusre function ko as a parameter le
+    example:
+      function higherOrderFunc(func) { //higher order function
+        func();
+      }
+      function callbackFunc() { //callback function
+        console.log("callback function executed");
+      }
+      higherOrderFunc(callbackFunc);
   callback function
-  first class function
+
+  first class function -> jaha jaha variable use hota hai waha waha function bhi use ho sakta hai
+    example:
+      let firstClassFunc = function() { //first class function
+        console.log("first class function");
+      }
+      firstClassFunc(); //function as a value
+
+      -> function as parameter
+      -> function as return value
+
   pure function
+    same input = same output
+    isme koi side effect nahi hota
+
   impure function
+    same input = different output
+    isme side effect ho sakta hai
+
+
+//Scope in JavaScript
+  block scope
+  function scope
+  global scope
+
+//Closures in JavaScript -> ek function hai jo return karta hai function but returning function hai vo parrent funciton ka koi variable use kata hai
+  example:
+    function outerFunction() {
+      let outerVariable = "I am from outer function";
+      function innerFunction() {
+        console.log(outerVariable); //accessing outer function variable
+      }
+      return innerFunction;
+    }
+    let closureFunction = outerFunction();
+    closureFunction(); //I am from outer function
+
+
+//scoping rules in JavaScript
