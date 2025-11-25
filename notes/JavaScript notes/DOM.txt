@@ -1,0 +1,26 @@
+//DOM
+4 pillars of DOM manipulation
+  selection
+    querySelector
+    getElementById
+    getElementsByClassName
+    querySelectorAll
+
+  changing html
+    textContent
+    innerHTML
+    
+  changing style
+  event listeners
+
+
+var h1 = document.querySelector("h1"); // Selects the first <h1> element in the document.
+h1.innerHTML = "Hello World"; // Changes the content of the <h1> element to "Hello World".
+h1.style.color = "blue"; // Changes the text color of the <h1> element to blue.
+var myElement = document.getElementById("myId"); // Selects the element with the ID "myId".
+
+
+//event listeners
+h1.addEventListener("click", function() {
+    alert("You clicked the heading!"); // Displays an alert when the <h1> element is clicked.
+});
