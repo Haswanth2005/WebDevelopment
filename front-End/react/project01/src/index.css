@@ -1,0 +1,7 @@
+@import "tailwindcss";
+/* <div class="shape"> OR <img class="shape"> */
+.shape {
+  aspect-ratio: 1.654;
+  clip-path: shape(from 100% 66.77%, vline to 9.4%, curve to 94.32% 0% with 100% 4.21%/97.45% 0%, hline to 5.68%, curve to 0% 9.4% with 2.55% 0%/0% 4.21%, vline to 90.6%, curve to 5.68% 100% with 0% 95.79%/2.55% 100%, hline to 51.47%, curve to 55.01% 94.15% with 53.42% 100%/55.01% 97.38%, curve to 58.54% 88.3% with 55.01% 90.92%/56.59% 88.3%, hline to 60.09%, curve to 63.75% 82.23% with 62.11% 88.3%/63.75% 85.58%, curve to 67.42% 76.17% with 63.75% 78.89%/65.39% 76.17%, hline to 94.32%, curve to 100% 66.77% with 97.45% 76.17%/100% 71.96%, close);
+  background: linear-gradient(60deg in hsl, #d75252, #852b4f);
+}

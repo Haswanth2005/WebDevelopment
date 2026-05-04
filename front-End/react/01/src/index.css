@@ -1,0 +1,20 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: logo;
+  src: url(./assets/niva-font/Niva-Alt-Black.ttf);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body,
+html {
+  height: 100%;
+  width: 100%;
+}
+
+.logo{
+  font-family: logo;
+}

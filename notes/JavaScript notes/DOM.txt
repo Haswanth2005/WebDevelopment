@@ -9,7 +9,7 @@
   changing html
     textContent
     innerHTML
-    
+
   changing style
   event listeners
 
@@ -24,3 +24,30 @@ var myElement = document.getElementById("myId"); // Selects the element with the
 h1.addEventListener("click", function() {
     alert("You clicked the heading!"); // Displays an alert when the <h1> element is clicked.
 });
+
+
+createElement - document.createElement('h1')
+appendChild - parent.appendChild(child) javaScript se html me element add kartha ha
+
+
+//setTimeout, setInterval and clearInterval
+
+setTimeout - delay (koi bhi chiez kuch time k bad karni ho tho setTimeout use kartha ha)
+  setTimeout(function() {
+      alert("This alert appears after 2 seconds!");
+  }, 2000); // 2000 milliseconds = 2 seconds
+
+setInterval - repeat (specific time inInterval ke bad function reapeat hota ha)
+  setInterval(function() {
+      console.log("This message appears every 3 seconds!");
+  }, 3000); // 3000 milliseconds = 3 seconds
+
+clearInterval - stop (setInterval ko rokne ke liye clearInterval use kartha ha)
+  var intervalId = setInterval(function() {
+      console.log("This message appears every 3 seconds!");
+  }, 3000);
+  // To stop the interval after 10 seconds
+  setTimeout(function() {
+      clearInterval(intervalId);
+      console.log("Interval cleared!");
+  }, 10000); // 10000 milliseconds = 10 seconds
