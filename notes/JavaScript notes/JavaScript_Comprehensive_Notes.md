@@ -1,5 +1,5 @@
 # 🚀 The Complete JavaScript Guide
-> A beginner-to-advanced walkthrough of every major JavaScript concept — explained simply, with examples. Perfect for learning or quick reference!
+> A beginner-to-advanced walkthrough of every major JavaScript concept — explained simply, with examples. Perfect for learning or quick reference.
 ---
 
 ## Table of Contents
