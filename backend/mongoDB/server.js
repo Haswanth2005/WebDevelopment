@@ -1,11 +1,10 @@
-//server.js has also two things
-// -start the server and connect to database
+require("dotenv").config()
+const app = require("./src/app.js")
+const connectToDb = require("./src/config/database.js")
 
-const app = require('./src/app.js');
-const connectToDb = require('./src/config/database.js');
 
-connectToDb();
+connectToDb()
 
-app.listen(3000,() => {
-  console.log("server has started");
+app.listen(3000, () => {
+  console.log("server is started");
 })
